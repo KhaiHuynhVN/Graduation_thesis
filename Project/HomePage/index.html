@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="../font-awesome/font-awesome-pro-v6-6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./index-2.css">
+    <link rel="stylesheet" href="../Grid/libraryGridF8.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./indexResponsive.css">
+
+    <title>KIN - Khách Sạn Việt Nam</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-left">
+            <div class="LOGO">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="LOGO-title">KIN - Khách Sạn Việt Nam</div>
+
+            <div class="container-left-menuContainer">
+                <div class="container-left__menu--parent">
+                    <div class="container-left__menu">
+                        <div class="container-left__menu-logo">
+                            <img class="center" src="../img/logo.png" alt="">
+                        </div>
+                        <div class="container-left__menu-itemCtn">
+                            <div type="room" class="item active">
+                                <div class="after"></div>
+                                <div class="before"></div>
+                                <div class="text">Phòng</div>
+                            </div>
+                            <div type="service" class="item">
+                                <div class="after"></div>
+                                <div class="before"></div>
+                                <div class="text">Dịch Vụ</div>
+                            </div>
+                            <div type="endow" class="item">
+                                <div class="after"></div>
+                                <div class="before"></div>
+                                <div class="text">Ưu Đãi</div>
+                            </div>
+                            <div type="introduce" class="item">
+                                <div class="after"></div>
+                                <div class="before"></div>
+                                <div class="text">Giới Thiệu</div>
+                            </div>
+                            <div type="contact" class="item">
+                                <div class="after"></div>
+                                <div class="before"></div>
+                                <div class="text">Liên Hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-left__control">
+                    <div class="container-left__control__textContent">
+                        <div class="after"></div>
+                        <div class="before"></div>
+                        Admin Đăng Nhập
+                        <div class="starting-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-left-content"></div>
+        </div>
+
+        <div class="container-branch">
+            <div class="box">
+                <div data-branch="Thành phố Hồ Chí Minh" branch="TP HCM" class="branch-item">
+                    <div class="text">TP HCM</div>
+                </div>
+                <div data-branch="Hà Nội" branch="HaNoi" class="branch-item">
+                    <div class="text">Hà Nội</div>
+                </div>
+                <div data-branch="Đà Nẵng" branch="DaNang" class="branch-item">
+                    <div class="text">Đà Nẵng</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right">
+            <div class="container-right__content">
+                <div class="text">
+                    <div class="start"></div>
+                </div>
+            </div>
+            <div class="container-right-filter">
+                <div class="container-right-filter__selectContainer">
+                    <span class="container-right-filter__selectContainer-title">Hạng phòng</span>
+                    <div class="select border">
+                        <div class="select-ctn">
+                            <div class="select-ctn-value">
+                                <span type="all">Tất cả</span>
+                                <i class="fa-solid fa-square-chevron-down select-ctn-value__icon active"></i>
+                                <i class="fa-solid fa-square-chevron-up select-ctn-value__icon"></i>
+                            </div>
+                            <div class="select-ctn-optionCtn">
+                                <li type="all" class="select-ctn-optionCtn__option active">
+                                    Tất cả
+                                </li>
+                                <li type="normal" class="select-ctn-optionCtn__option">
+                                    Phổ thông
+                                </li>
+                                <li type="premier" class="select-ctn-optionCtn__option">
+                                    Cao cấp
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkBoxCtn">
+                    <div class="checkBoxCtn-checkBox">
+                        <i class="fa-duotone fa-check iconChecked"></i>
+                        <div class="checkBoxCtn-checkBox-background center"></div>
+                    </div>
+                    <span class="checkBoxCtn-text">Đang trống</span>
+                </div>
+            </div>
+            <div class="container-right-main grid wide">
+                <div class="row">
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12">
+                        <div class="room-container loading">
+                            <div class="room-container__img">
+                                <div class="lineWhite"></div>
+                                <div class="room-container__img-loading"></div>
+                                <div class="room-container__img-border"></div>
+                            </div>
+                            <div class="room-container__info">
+                                Phòng ABC
+                                <span class="room-container__info-amountGuest">Phòng 1 người</span>
+                            </div>
+                            <div class="room-container__book-room-btn">
+                                <div class="background"></div>
+                                <i></i>
+                                <div class="text">Đặt phòng ngay</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerSendInfo">
+        <form class="containerSendInfo-form">
+            <span class="containerSendInfo-form-title">
+                Chưa tìm được phòng? Chúng tôi sẽ liên hệ cho bạn!
+            </span>
+            <div class="signIn-form__box-input">
+                <input class="box-input-phoneNumb" type="number" placeholder=" ">
+                <div class="signIn-form__placeholderInput">
+                    <span class="signIn-form__placeholderInput-text">Số điện thoại của bạn</span>
+                    <i class="fa-solid fa-triangle-exclamation icon-warning"></i>
+                </div>
+                <div class="signIn-form__line"></div>
+            </div>
+            <div class="signIn-form__box-input">
+                <input class="box-input-phoneNumb" type="text" placeholder=" ">
+                <div class="signIn-form__placeholderInput">
+                    <span class="signIn-form__placeholderInput-text">Địa chỉ email</span>
+                    <i class="fa-solid fa-triangle-exclamation icon-warning"></i>
+                </div>
+                <div class="signIn-form__line"></div>
+            </div>
+            <div class="err-form-notifi">
+                <span class="err-form-notifi__content">
+                    Vui lòng nhập đúng số điện thoại của bạn!
+                </span>
+                <span class="err-form-notifi__content">
+                    Email không hợp lệ!
+                </span>
+            </div>
+            <div class="signIn-form__button-box">
+                <div class="btn">Gửi cho chúng tôi</div>
+                <i></i>
+            </div>
+            <div class="containerSendInfo-form-info">
+                <span class="containerSendInfo-form-info__title">
+                        Hoặc liên hệ với chúng tôi để được tư vấn! (miễn phí cước)
+                </span>
+                <div class="containerSendInfo-form-info__phoneNumb">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ssvybplt.json"
+                        trigger="loop-on-hover"
+                        colors="primary:black"
+                        target="div"
+                        delay="100"
+                        state="hover-phone-ring"
+                        style="width: 30px;height: 30px">
+                    </lord-icon>
+                    <span>0933069587</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-footer">
+        <div class="footerCtn grid wide">
+            <div class="row">
+                <div class="col l-5 m-12 c-12">
+                    <div class="footerCtn-widget footerCtn-advertisement grid wide">
+                        <div class="row no-evenly">
+                            <div class="col l-3 m-3 c-12">
+                                <div class="footerCtn-advertisement-logo">
+                                    <img src="../img/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col l-9 m-9 c-12">
+                                <span class="footerCtn-advertisement-content span">
+                                    Khách sạn 5 sao KIN nằm ngay trung tâm thành phố Hồ Chí Minh. Mang tới dịch vụ tiện ích 
+                                    tốt nhất cho chuyến du lịch của bạn. <br>
+                                    Hãy cùng đến và trải nghiệm!
+                                </span>
+                            </div>
+                            <div class="col l-12">
+                                <div class="footerCtn-advertisement-remcommend">
+                                    Recommended 
+                                    <img class="footerCtn-advertisement-remcommend__img" src="../img/footer-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="footerCtn-widget footerCtn-contact">
+                        <span class="footerCtn-widget-title footerCtn-contact-title">
+                            LIÊN HỆ
+                        </span>
+                        <ul class="footerCtn-contact-details">
+                            <li>
+                                <i class="fa-duotone fa-location-dot icon"></i> 
+                                Ho Van Long Street, Tan Tao Ward, Binh Tan District, Ho Chi Minh City.
+                            </li>
+                            <li>
+                                <i class="fa-duotone fa-phone icon"></i> 
+                                +84 933 069 587
+                            </li>
+                            <li>
+                                <i class="fa-duotone fa-mailbox icon"></i> 
+                                khaihuynh450@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                    <div class="footerCtn-widget footerCtn-help">
+                        <span class="footerCtn-widget-title footerCtn-contact-title">
+                            HỖ TRỢ
+                        </span>
+                        <ul class="footerCtn-help-menu">
+                            <li>Hướng dẫn đặt phòng</li>
+                            <li>Điều khoản sử dụng</li>
+                            <li>Chính sách bảo mật</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sub-footer grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="sub-footer-networkContact">
+                        <span class="footerCtn-copyrights span">
+                            © 2023 KIN Hotel. Designed by DemonVN.
+                        </span>
+                    
+                        <div class="contactCtn-body-container__col-contactCtn">
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100017221278677">
+                                <span class="contactCtn-body-container__col-contactCtn-title">Facebook</span>
+                                <i style="--color: rgb(59 89 152)" class="fa fa-facebook-f icon"></i>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100017221278677">
+                                <span class="contactCtn-body-container__col-contactCtn-title">Twitter</span>
+                                <i style="--color: rgb(64 153 255)" class="fa-brands fa-twitter icon"></i>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100017221278677">
+                                <span class="contactCtn-body-container__col-contactCtn-title">Youtube</span>
+                                <i style="--color: rgb(187 0 0)" class="fa fa-youtube icon"></i>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100017221278677">
+                                <span class="contactCtn-body-container__col-contactCtn-title">Tripadvisor</span>
+                                <i style="--color: rgb(0 166 128) " class="fa fa-tripadvisor icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backToTop-Btn"><i class="fa-solid fa-caret-up"></i></div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script src="https://cdnout.com/html-to-image/html-to-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./main.js"></script>
+</html>

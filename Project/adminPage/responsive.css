@@ -1,0 +1,24 @@
+@media (max-width: 1080px) {
+    .option li.search {
+        flex: 3.5;
+    }
+}
+@media (max-width: 900px) {
+    .option li.search {
+        flex: 4.5;
+    }
+    .option li.search input {
+        font-size: 17px;
+    }
+}
+@media (max-width: 800px) {
+    .option li.search {
+        min-width: 500px;
+    }
+    .option li.add {
+        min-width: 250px;
+    }
+    .option__item--itemTop {
+        flex-wrap: wrap;
+    }
+}
